@@ -1,0 +1,27 @@
+aws_region         = "us-east-1"
+cluster_name       = "aztec-k8s-cluster"
+environment        = "dev"
+kubernetes_version = "1.34"
+
+# VPC Configuration
+vpc_cidr            = "10.0.0.0/16"
+availability_zones  = ["us-east-1a", "us-east-1b"]
+private_subnet_cidrs = ["10.0.1.0/24", "10.0.2.0/24"]
+public_subnet_cidrs  = ["10.0.101.0/24", "10.0.102.0/24"]
+
+# Instance types
+node_instance_type  = "t3.medium"  # For EKS managed node group
+ec2_instance_type   = "t3.medium"  # For additional EC2 worker
+
+monitoring_namespace    = "monitoring"
+
+# Grafana Configuration
+grafana_replicas        = 1 
+grafana_admin_user      = "admin"
+grafana_admin_password  = "admin"
+
+# VictoriaMetrics Configuration
+victoriametrics_port    = 8428
+
+# GitHub Exporter Configuration
+github_token            = "your-github-token-here"

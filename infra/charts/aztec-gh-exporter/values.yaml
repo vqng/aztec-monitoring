@@ -1,0 +1,39 @@
+replicaCount: 1
+
+image:
+  repository: hvquang/aztec-gh-exporter
+  pullPolicy: IfNotPresent
+  tag: "0.1.0"
+
+nameOverride: ""
+fullnameOverride: ""
+
+serviceAccount:
+  create: true
+  annotations: {}
+  name: ""
+
+podAnnotations: {}
+
+podSecurityContext: {}
+
+securityContext: {}
+
+resources:
+  limits:
+    cpu: 200m
+    memory: 256Mi
+  requests:
+    cpu: 100m
+    memory: 128Mi
+
+env:
+  VM_URL: ""
+  GITHUB_TOKEN: ""
+
+nodeSelector: {}
+
+tolerations: []
+
+affinity: {}
+
