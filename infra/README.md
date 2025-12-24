@@ -52,7 +52,7 @@ While this project is a Proof of Concept (PoC) rather than a production-hardened
     ```bash
     terraform output
     # ...
-    # grafana_public_lb_url = "[http://a5e9dabe-....elb.amazonaws.com](http://a5e9dabe-....elb.amazonaws.com)"
+    # grafana_public_lb_url = "http://a5e9dabe4c370497fae772103443c91e-649800778.us-east-1.elb.amazonaws.com"
     ```
     * Navigate to the URL in your browser.
     * Login with `admin:admin` (or your custom credentials).
